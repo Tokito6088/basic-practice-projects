@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zoro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>zoro</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                 <ul id="sidenav">
+                     <li><a href="">Home</a></li>
+                     <li><a href="">Movies</a></li>
+                     <li><a href="">TV Series</a></li>
+                     <li><a href="">Most Popular</a></li>
+                     <li><a href="">Top Airing</a></li>
+                 </ul>
+                 <div class="menubtn">
+                    <i id="menubtn" class="fa-solid fa-bars menu"></i>
+                 </div>
+             </nav>
+             <div class="header-body">
+                 <div class="left-head">
+                     <div class="logo">
+                         <a href="https://zoro.to"><img src="images/logo.png" alt=""></a>
+                     </div>
+                     <div class="search-box">
+                         <input type="text" placeholder="search anime...">
+                         <a href=""> <i class="fa fa-search" aria-hidden="true"></i></a>
+                     </div>
+                     <div class="top-search">
+                         <span>top search : </span>
+                         <a href="">one piece, </a>
+                         <a href="">blue lock, </a>
+                         <a href="">my hero academia, </a>
+                         <a href="">naruto:shippuden, </a>
+                         <a href="">black clover, </a>
+                         <a href="">the aminence in shadow, </a>
+                         <a href="">boruto:naruto next gendretion, </a>
+                         <a href="">naruto, </a>
+                         <a href="">attack on titans, </a>
+                         <a href="">bleach, </a>
+                         <a href="">tokyo ghoul, </a>
+                         <a href="">one punch man, </a>
+                     </div>
+                 </div>
+                 <div class="right-head">
+                     <img src="images/zoro-min.png" alt="">
+                 </div>
+             </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main-btn">
+            <a href="https://zoro.to">view full site <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="share">
+            <div class="share-text">
+                <p>share zoro <br> <span>to your friends</span></p>
+            </div>
+            <div class="social-media-icons">
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>facebook</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>twitter</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-reddit-alien"></i>
+                        <span>reddit</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>telegram</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                       <span> whatsapp</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+     <script>
+
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+
+        menubtn.onclick = function(){
+            if(sidenav.style.top == "-250px"){
+                sidenav.style.top = "0"
+                sidenav.style.position = "relative";
+            }
+            else{
+                sidenav.style.top = "-250px";
+                sidenav.style.position = "absolute"
+            }
+        }
+    </script> 
+
+</body>
+</html>

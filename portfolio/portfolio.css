@@ -1,0 +1,454 @@
+@font-face {
+    font-family:robot;
+    src: url(Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: robot;
+    
+}
+:root{
+    --color:#cc0066;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+header{
+    background-image: url(images/IwXtTIf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    opacity: 0.8;
+    position: relative;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 0px;
+}
+.logo{
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 1.35rem;
+}
+.logo span{
+    color:var(--color);
+}
+nav .navbar ul{
+    display: flex;
+}
+nav .navbar ul li{
+    list-style: none;
+    padding: 0px 20px 0 20px;
+
+}
+nav .navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+nav .navbar ul li a::after{
+    content: '';
+    height: 2px;
+    width:0;
+    background-color: #cc0066;
+    display: block;
+    transition: 1s;
+    margin: auto;
+}
+nav .navbar ul li:hover a::after{
+    width: 100%;
+
+}
+nav .subscribe button{
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 20px;
+    border: 2px solid #cc0066;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+nav .subscribe button:hover{
+    background-color: #cc0066;
+}
+.intro{
+    line-height: 40px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.intro h1{
+    font-size: 3rem;
+    line-height: 80px;
+    letter-spacing: 4px;
+}
+.intro span{
+    color: #cc0066;
+}
+.intro small{
+    color: #656464;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro p{
+    letter-spacing: 3px;
+}
+.intro input[type="email"]{
+    caret-color: #cc0066;
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border: 2px solid #cc0066;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.intro input[type="email"]:focus{
+    background-color: #eee;
+    border: 2px solid var(--color);
+}
+
+.intro input[type="button"]{
+    position: relative;
+    right: 104px;
+    width: 100px;
+    height: 49px;
+    border: 2px solid #fff;
+    background-color: #cc0066;
+    border-radius: 20px;
+    margin-top: 50px;
+    color: white;
+    cursor: pointer;
+}
+.about{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 40px;
+    height: 100vh;
+
+}
+.about .left img{
+    width: 700px;
+    height: auto;
+    margin-right: 50px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgb(48, 46, 46);
+}
+.about .right{
+    width: 400px;
+    align-self: center;
+}
+.about .right h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+.about .right h6{
+    letter-spacing: 6px;
+    font-size: 1rem;
+}
+.about .right p{
+    letter-spacing: 2px;
+    font-size: small;
+    color: #9b9696;
+}
+.about .right span{
+    color: #cc0066;
+}
+.about .right button{
+    padding: 7px 30px ;
+    color: white;
+    background: transparent;
+    border: 2px solid #cc0066;
+    transition: 1s;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.about .right button:hover{
+    background: #cc0066;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+}
+.service-h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 4px;
+}
+.box1{
+    width: 300px;
+    background-color: #1a1a1a;
+    margin: 0 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px 20px 50px 20px;
+    border-radius: 12px;
+}
+.box2{
+    width: 300px;
+    background-color: #1a1a1a;
+    margin: 0 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px 20px 50px 20px;
+    border-radius: 12px;
+}
+.box3{
+    width: 300px;
+    background-color: #1a1a1a;
+    margin: 0 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px 20px 50px 20px;
+    border-radius: 12px;
+}
+.box1 h1{
+    font-size: 1.40rem;
+    letter-spacing: 2px;
+}
+.box2 h1{
+    font-size: 1.40rem;
+    letter-spacing: 2px;
+}
+.box3 h1{
+    font-size: 1.40rem;
+    letter-spacing: 2px;
+}
+.box1 p{
+    font-size: smaller;
+    margin-top: 10px;
+    line-height: 20px;
+    color: #9b9696;
+    letter-spacing: 1px;
+}
+.box2 p{
+    font-size: smaller;
+    margin-top: 10px;
+    line-height: 20px;
+    color: #9b9696;
+    letter-spacing: 1px;
+}
+.box3 p{
+    font-size: smaller;
+    margin-top: 10px;
+    line-height: 20px;
+    color: #9b9696;
+    letter-spacing: 1px;
+}
+.box1 img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.box2 img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.box3 img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.box1 button{
+    padding:8px 20px ;
+    color: #fff;
+    background-color: #cc0066;
+    font-weight: bold;
+    border: 2px solid #cc0066;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.box2 button{
+    padding:8px 20px ;
+    color: #fff;
+    background-color: #cc0066;
+    font-weight: bold;
+    border: 2px solid #cc0066;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.box3 button{
+    padding:8px 20px ;
+    color: #fff;
+    background-color: #cc0066;
+    font-weight: bold;
+    border: 2px solid #cc0066;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.some-text{
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 100px 0;
+    margin-top: 40px;
+}
+.some-text h1{
+    letter-spacing: 3px;
+}
+.some-text button{
+    padding:10px 40px ;
+    color: #fff;
+    background-color: #cc0066;
+    font-weight: bold;
+    border: 2px solid #cc0066;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+footer h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-variant: small-caps;
+    color: #cc0066;
+}
+footer img{
+    margin: 10px 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px){
+    .service-h1{
+        font-size: 2rem;
+    }
+    footer img{
+        width: 15px;
+    }
+    footer h1{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 1192px){
+    .about .left img{
+        max-width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .about .right h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .about .right{
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+   header{
+    background: none;
+    height: 100vh;
+    margin-bottom: 100px;
+   }
+    nav{
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+    .navbar{
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-radius: 30px;
+        flex-wrap: wrap;
+    }
+.logo{
+    align-self: flex-start;
+    border: 5px double #454141;
+    border-radius: 20px;
+    padding: 15px 20px;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+.subscribe{
+    align-self: center ;
+    margin-top: 30px;
+}
+.intro{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about .left img{
+    width: 90%;
+    margin-right: 0;
+
+}
+}
+@media screen and (max-width:570px){
+    nav .navbar ul li{
+        padding: 0 10px;
+        font-size: small;
+    }
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro p{
+        font-size:  0.8em;
+        letter-spacing: 1px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro input[type="button"]{
+        position: static;
+        margin-top: 20px;
+        width: 90px;
+        height: 40px;
+        border-radius: 13px;
+    }
+    .intro input[type="button"]:hover{
+        background-color: #a90a59;
+    }
+    .intro input[type="email"]{
+        width: 200px;   
+    }
+}
+@media screen and (max-width:790px){
+    .service{
+        flex-direction: column;
+        height: fit-content;
+        margin: 50px 0;
+    }
+    .service .box1,.box2,.box3{
+        margin: 20px 0;
+        width: 70%;
+    }
+    .some-text h1{
+        font-size: 1rem;
+    }
+}
